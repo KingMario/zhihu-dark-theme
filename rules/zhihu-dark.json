@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "transform": {
+          "queryTransform": {
+            "addOrReplaceParams": [
+              { "key": "theme", "value": "dark" }
+            ]
+          }
+        }
+      }
+    },
+    "condition": {
+      "requestDomains": ["zhihu.com"],
+      "resourceTypes": ["main_frame", "sub_frame"]
+    }
+  }
+]
